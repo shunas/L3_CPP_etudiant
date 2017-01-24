@@ -2,7 +2,9 @@
 
 #include "Bibliotheque.hpp"
 
-TEST(TestGroup, Bibliotheque_trierParAuteurEtTitre_1) 
+TEST_GROUP(GroupBibliotheque) { };
+
+TEST(GroupBibliotheque, Bibliotheque_trierParAuteurEtTitre_1) 
 {
     Bibliotheque b;
     b.push_back(Livre("t1","a1",13));
@@ -14,7 +16,7 @@ TEST(TestGroup, Bibliotheque_trierParAuteurEtTitre_1)
     CHECK(b[2] == Livre("t2","a2",37));
 }
 
-TEST(TestGroup, Bibliotheque_trierParAuteurEtTitre_2) 
+TEST(GroupBibliotheque, Bibliotheque_trierParAuteurEtTitre_2) 
 {
     Bibliotheque b;
     b.push_back(Livre("t1","a1",13));
@@ -26,7 +28,7 @@ TEST(TestGroup, Bibliotheque_trierParAuteurEtTitre_2)
     CHECK(b[2] == Livre("t1","a1",13));
 }
 
-TEST(TestGroup, Bibliotheque_trierParAnnee_1) 
+TEST(GroupBibliotheque, Bibliotheque_trierParAnnee_1) 
 {
     Bibliotheque b;
     b.push_back(Livre("t0","a0",42));
@@ -38,7 +40,7 @@ TEST(TestGroup, Bibliotheque_trierParAnnee_1)
     CHECK(b[2] == Livre("t0","a0",42));
 }
 
-TEST(TestGroup, Bibliotheque_fichier_1 ) 
+TEST(GroupBibliotheque, Bibliotheque_fichier_1 ) 
 {
     Bibliotheque b1;
     b1.push_back(Livre("t0","a0",42));
@@ -52,7 +54,7 @@ TEST(TestGroup, Bibliotheque_fichier_1 )
     CHECK(b2[2] == Livre("t2","a2",37));
 }
 
-TEST(TestGroup, Bibliotheque_charger_1 ) 
+TEST(GroupBibliotheque, Bibliotheque_charger_1 ) 
 {
     Bibliotheque b;
     try

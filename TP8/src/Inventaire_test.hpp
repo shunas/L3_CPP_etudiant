@@ -2,7 +2,9 @@
 
 #include <sstream>
 
-TEST(TestGroup, TestInventaire_1) 
+TEST_GROUP(GroupInventaire) { };
+
+TEST(GroupInventaire, TestInventaire_1) 
 {
 	std::locale vieuxLoc = std::locale::global(std::locale("fr_FR.UTF-8"));
 	Inventaire inventaire;
@@ -15,7 +17,7 @@ TEST(TestGroup, TestInventaire_1)
 	std::locale::global(vieuxLoc);
 }
 
-TEST(TestGroup, TestInventaire_2) 
+TEST(GroupInventaire, TestInventaire_2) 
 {
 	std::locale vieuxLoc = std::locale::global(std::locale("fr_FR.UTF-8"));
 	Inventaire inventaire;
@@ -29,7 +31,7 @@ TEST(TestGroup, TestInventaire_2)
  	std::locale::global(vieuxLoc);
 }
 
-TEST(TestGroup, TestInventaire_3) 
+TEST(GroupInventaire, TestInventaire_3) 
 {
 	auto funcCompare2Bouteilles =
 			[] (const Bouteille &b1, const Bouteille &b2)
@@ -39,7 +41,7 @@ TEST(TestGroup, TestInventaire_3)
 	CHECK_EQUAL( funcCompare2Bouteilles(b1,b2), false );
 }
 
-TEST(TestGroup, TestInventaire_4) 
+TEST(GroupInventaire, TestInventaire_4) 
 {
 	auto funcCompare2Bouteilles =
 			[] (const Bouteille &b1, const Bouteille &b2)

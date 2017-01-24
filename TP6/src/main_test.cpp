@@ -1,7 +1,5 @@
 #include <CppUTest/CommandLineTestRunner.h>
 
-TEST_GROUP(TestGroup) { };
-
 // fichiers de tests unitaires des différents modules
 #include "Livre_test.hpp"
 #include "Bibliotheque_test.hpp"

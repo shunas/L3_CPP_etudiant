@@ -3,13 +3,15 @@
 
 #include <sstream>
 
-TEST(TestGroup, TestListe_1) 
+TEST_GROUP(GroupListe) { };
+
+TEST(GroupListe, TestListe_1) 
 {
 	Liste liste;
 	CHECK_EQUAL(liste.empty(), true);
 }
 
-TEST(TestGroup, TestListe_2) 
+TEST(GroupListe, TestListe_2) 
 {
 	Liste liste;
 	liste.push_front(1);
@@ -17,7 +19,7 @@ TEST(TestGroup, TestListe_2)
 	CHECK_EQUAL(liste.front(), 1);
 }
 
-TEST(TestGroup, TestListe_3) 
+TEST(GroupListe, TestListe_3) 
 {
 	Liste liste;
 	liste.push_front(1);
@@ -26,7 +28,7 @@ TEST(TestGroup, TestListe_3)
 	CHECK_EQUAL(liste.front(), 2);
 }
 
-TEST(TestGroup, TestListe_4) 
+TEST(GroupListe, TestListe_4) 
 {
 	Liste liste;
 	liste.push_front(1);
@@ -35,20 +37,20 @@ TEST(TestGroup, TestListe_4)
 	CHECK_EQUAL(liste.empty(), true);
 }
 
-TEST(TestGroup, TestListe_5) 
+TEST(GroupListe, TestListe_5) 
 {
 	Liste liste;
 	CHECK_EQUAL(liste.begin() != liste.end(), false);
 }
 
-TEST(TestGroup, TestListe_6) 
+TEST(GroupListe, TestListe_6) 
 {
 	Liste liste;
 	liste.push_front(37);
 	CHECK_EQUAL(liste.begin() != liste.end(), true);
 }
 
-TEST(TestGroup, TestListe_7) 
+TEST(GroupListe, TestListe_7) 
 {
 	Liste liste;
 	liste.push_front(37);
@@ -58,7 +60,7 @@ TEST(TestGroup, TestListe_7)
 	CHECK_EQUAL(iter != liste.end(), false);
 }
 
-TEST(TestGroup, TestListe_8) 
+TEST(GroupListe, TestListe_8) 
 {
 	Liste liste;
 	liste.push_front(37);
@@ -66,7 +68,7 @@ TEST(TestGroup, TestListe_8)
 	CHECK_EQUAL(*iter, 37);
 }
 
-TEST(TestGroup, TestListe_9) 
+TEST(GroupListe, TestListe_9) 
 {
 	Liste liste;
 	liste.push_front(37);
