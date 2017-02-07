@@ -1,3 +1,5 @@
+#include <CppUTest/CommandLineTestRunner.h>
+
 #include "Inventaire.hpp"
 
 #include <sstream>

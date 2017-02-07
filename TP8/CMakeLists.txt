@@ -7,16 +7,20 @@ find_package( PkgConfig REQUIRED )
 pkg_check_modules( PKG REQUIRED gtkmm-2.4 cpputest )
 include_directories( ${PKG_INCLUDE_DIRS} )
 
-set( SOURCES 
+
+add_executable( main_bouteille.out src/main_bouteille.cpp 
     src/Bouteille.cpp 
     src/Controleur.cpp 
     src/Inventaire.cpp 
-    src/Vue.cpp 
-    )
-
-add_executable( main_bouteille.out src/main_bouteille.cpp ${SOURCES} )
+    src/Vue.cpp )
 target_link_libraries( main_bouteille.out ${PKG_LIBRARIES} )
 
-add_executable( main_test.out src/main_test.cpp ${SOURCES} )
+add_executable( main_test.out src/main_test.cpp 
+    src/Bouteille.cpp 
+    src/Bouteille_test.cpp 
+    src/Controleur.cpp 
+    src/Inventaire.cpp 
+    src/Inventaire_test.cpp 
+    src/Vue.cpp )
 target_link_libraries( main_test.out ${PKG_LIBRARIES} )
 

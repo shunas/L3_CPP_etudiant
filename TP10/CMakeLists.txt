@@ -9,6 +9,7 @@ include_directories( ${PKG_INCLUDE_DIRS} )
 
 add_executable( main_liste.out src/main_liste.cpp )
 
-add_executable( main_test.out src/main_test.cpp )
+add_executable( main_test.out src/main_test.cpp 
+    src/Liste_test.cpp )
 target_link_libraries( main_test.out ${PKG_LIBRARIES} )
 

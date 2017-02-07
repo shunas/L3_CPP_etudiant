@@ -1,3 +1,5 @@
+#include <CppUTest/CommandLineTestRunner.h>
+
 #include "Bouteille.hpp"
 
 #include <sstream>

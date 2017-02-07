@@ -1,3 +1,4 @@
+#include <functional>
 #include <euler2d/Vecteur2d.hpp>
 
 TEST_GROUP(GroupVecteur2d) { };

@@ -22,7 +22,8 @@ add_executable( euler2d_gui.out src/euler2d_gui/euler2d_gui.cpp
 target_link_libraries( euler2d_gui.out ${MYPKG_LIBRARIES} euler2d )
 
 # tests
-add_executable( tests.out src/tests/tests.cpp )
+add_executable( tests.out src/tests/tests.cpp 
+    src/tests/Vecteur2d_test.cpp )
 target_link_libraries( tests.out ${MYPKG_LIBRARIES} euler2d )
 
 # install binaries

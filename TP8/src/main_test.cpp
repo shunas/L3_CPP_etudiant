@@ -1,9 +1,4 @@
-
 #include <CppUTest/CommandLineTestRunner.h>
-
-// fichiers de tests unitaires des différents modules
-#include "Bouteille_test.hpp"
-#include "Inventaire_test.hpp"
 
 int main(int argc, char ** argv)
 {

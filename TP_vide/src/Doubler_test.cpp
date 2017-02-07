@@ -1,3 +1,5 @@
+#include <CppUTest/CommandLineTestRunner.h>
+
 #include "Doubler.hpp"
 
 TEST_GROUP(GroupDoubler) { };
