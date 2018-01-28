@@ -1,5 +1,6 @@
 #include <functional>
 #include <euler2d/Vecteur2d.hpp>
+#include <CppUTest/CommandLineTestRunner.h>
 
 TEST_GROUP(GroupVecteur2d) { };
 
