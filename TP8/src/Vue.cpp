@@ -29,8 +29,6 @@ Vue(controleur), _kit(argc, argv) {
 
 	_window.add(_box);
 	_window.show_all();
-
-	actualiser();	// TODO virer ca, c'etait juste pour tester
 }
 
 void VueGraphique::actualiser() {

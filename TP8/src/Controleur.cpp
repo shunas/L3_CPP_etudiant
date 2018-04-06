@@ -7,6 +7,9 @@
 
 Controleur::Controleur(int argc, char ** argv) {
     _vues.push_back(std::make_unique<VueGraphique>(argc, argv, *this));
+
+    for (auto & v : _vues)
+      v->actualiser();
 }
 
 void Controleur::run() {
