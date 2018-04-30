@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/jimmy/Documents/C++/TP1/src/Fibonacci.cpp
+Fibonacci.hpp
+/home/jimmy/Documents/C++/TP1/src/Fibonacci.hpp
+
+/home/jimmy/Documents/C++/TP1/src/Fibonacci.hpp
+iostream
+-
+
+/home/jimmy/Documents/C++/TP1/src/main_test.cpp
+CppUTest/CommandLineTestRunner.h
+-
+
+/home/jimmy/Documents/C++/TP1/src/test_Fibonacci.cpp
+CppUTest/CommandLineTestRunner.h
+-
+Fibonacci.hpp
+/home/jimmy/Documents/C++/TP1/src/Fibonacci.hpp
+

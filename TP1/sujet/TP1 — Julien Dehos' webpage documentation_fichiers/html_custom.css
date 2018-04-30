@@ -1,0 +1,46 @@
+
+/*
+a:hover {
+    color: #e68a00;
+}
+
+a {
+    color: #006600;
+}
+
+.wy-side-nav-search {
+    background-color: #006600;
+}
+*/
+
+/*
+.wy-side-nav-search {
+    background-color: #343131 ;
+}
+*/
+
+.wy-nav-content {
+    max-width: 1000px !important;
+}
+
+/*
+.wy-body-for-nav { 
+    background-size: 0; 
+}
+
+.wy-side-scroll {
+    height: 100%;
+}
+
+.wy-nav-content {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wy-grid-for-nav, .wy-nav-side {
+    padding-left: auto;
+}
+
+*/
+
+

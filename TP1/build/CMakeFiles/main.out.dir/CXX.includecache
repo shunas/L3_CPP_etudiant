@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/jimmy/Documents/C++/TP1/src/Fibonacci.cpp
+Fibonacci.hpp
+/home/jimmy/Documents/C++/TP1/src/Fibonacci.hpp
+
+/home/jimmy/Documents/C++/TP1/src/Fibonacci.hpp
+iostream
+-
+
+/home/jimmy/Documents/C++/TP1/src/Vecteur3.cpp
+Vecteur3.hpp
+/home/jimmy/Documents/C++/TP1/src/Vecteur3.hpp
+
+/home/jimmy/Documents/C++/TP1/src/Vecteur3.hpp
+iostream
+-
+cmath
+-
+
+/home/jimmy/Documents/C++/TP1/src/main.cpp
+iostream
+-
+Fibonacci.hpp
+/home/jimmy/Documents/C++/TP1/src/Fibonacci.hpp
+Vecteur3.hpp
+/home/jimmy/Documents/C++/TP1/src/Vecteur3.hpp
+
