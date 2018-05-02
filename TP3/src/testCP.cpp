@@ -1,6 +1,6 @@
 #include <CppUTest/CommandLineTestRunner.h>
 #include "client.hpp"
-
+#include "produit.hpp"
 
 /* Dans un TEST_GROUP, on peut définir un setup,
  * c'est a dire qu'avant de faire tout les test de ce groupe, il va faire toute ces action,
@@ -42,3 +42,28 @@ TEST(GroupClient, testName)
 {
 	CHECK_EQUAL("toto",c->getNom());
 }
+
+
+TEST_GROUP(GroupProduit)
+{
+	Produit * p;
+	void setup()
+	{p=new Produit(24,"tata");}
+
+	void teardown()
+	{delete p;}
+};
+
+TEST(GroupProduit,testId)
+{
+	CHECK_EQUAL(24,p->getId());
+}
+
+TEST(GroupProduit,testDescription)
+{
+	CHECK_EQUAL("tata",p->getDescription());
+}
+
+
+
+
