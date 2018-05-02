@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="131px" preserveAspectRatio="none" style="width:300px;height:131px;" version="1.1" viewBox="0 0 300 131" width="300px" zoomAndPan="magnify"><defs><filter height="300%" id="fpam9uotnfh19" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--class Magasin--><rect fill="#FEFECE" filter="url(#fpam9uotnfh19)" height="112.0234" id="Magasin" style="stroke: #A80036; stroke-width: 1.5;" width="283" x="6" y="8"/><ellipse cx="118.75" cy="24" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M121.7188,29 Q121.1406,29.5 120.5,29.75 Q119.8594,30 119.1563,30 Q116.6563,30 115.3359,28.4609 Q114.0156,26.9219 114.0156,24 Q114.0156,21.0781 115.3359,19.5391 Q116.6563,18 119.1563,18 Q119.8594,18 120.5078,18.25 Q121.1563,18.5 121.7188,19 L121.7188,22 Q121.0938,20.9688 120.5,20.4844 Q119.9063,20 119.2656,20 Q117.9375,20 117.25,21.0078 Q116.5625,22.0156 116.5625,24 Q116.5625,25.9844 117.25,26.9922 Q117.9375,28 119.2656,28 Q119.9063,28 120.5,27.5156 Q121.0938,27.0313 121.7188,26 L121.7188,29 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="49" x="139.25" y="28.1543">Magasin</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="7" x2="288" y1="40" y2="40"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="12" x="12" y="54.2104">...</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="7" x2="288" y1="60.8047" y2="60.8047"/><ellipse cx="17" cy="72.707" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="138" x="26" y="75.0151">«const» nbProduits(): int</text><ellipse cx="17" cy="85.5117" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="257" x="26" y="87.8198">ajouterProduit(nom: const std::string &amp;): void</text><ellipse cx="17" cy="98.3164" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="177" x="26" y="100.6245">«const» afficherProduits(): void</text><ellipse cx="17" cy="111.1211" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="210" x="26" y="113.4292">supprimerProduit(idProduit: int): void</text><!--
+@startuml
+
+class Magasin {
+...
++ <<const>> nbProduits(): int 
++ ajouterProduit(nom: const std::string &): void
++ «const» afficherProduits(): void
++ supprimerProduit(idProduit: int): void
+}
+
+@enduml
+
+PlantUML version 1.2017.18(Fri Oct 06 18:56:32 CEST 2017)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 1.8.0_172-02
+Operating System: Linux
+OS Version: 4.14.32
+Default Encoding: UTF-8
+Language: fr
+Country: FR
+--></g></svg>

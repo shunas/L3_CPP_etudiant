@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" style="" lang="en"><!--<![endif]--><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>TP3 — Julien Dehos' webpage  documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="http://julien.dehos.free.fr/build/html/_static/windsurf2_32.ico">
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="TP3%20%E2%80%94%20Julien%20Dehos%27%20webpage%20documentation_fichiers/theme.css" type="text/css">
+  
+
+  
+
+  
+        <link rel="author" title="About these documents" href="http://julien.dehos.free.fr/build/html/about.html">
+        <link rel="index" title="Index" href="http://julien.dehos.free.fr/build/html/genindex.html">
+        <link rel="search" title="Search" href="http://julien.dehos.free.fr/build/html/search.html">
+    <link rel="top" title="Julien Dehos' webpage  documentation" href="http://julien.dehos.free.fr/build/html/index.html">
+        <link rel="up" title="Langage C++" href="http://julien.dehos.free.fr/build/html/CPP/index.html">
+        <link rel="next" title="TP4" href="http://julien.dehos.free.fr/build/html/CPP/TP4.html">
+        <link rel="prev" title="TP2" href="http://julien.dehos.free.fr/build/html/CPP/TP2.html">
+    <link href="TP3%20%E2%80%94%20Julien%20Dehos%27%20webpage%20documentation_fichiers/html_custom.css" rel="stylesheet" type="text/css">
+
+
+  
+  <script src="TP3%20%E2%80%94%20Julien%20Dehos%27%20webpage%20documentation_fichiers/modernizr.js"></script><style></style>
+
+<style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_About.MathJax_MousePost {outline: none}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 5px 0px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; -khtml-border-radius: 5px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 1px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: .7em}
+.MathJax_MenuRadioCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuLabel {padding: 1px 2em 3px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #DDDDDD; margin: 4px 3px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: #606872; color: white}
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+.MathJax_ContextMenu:focus {outline: none}
+.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+#MathJax_AboutClose {top: .2em; right: .2em}
+.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_MenuClose:hover span {background-color: #CCC!important}
+.MathJax_MenuClose:hover:focus {outline: none}
+</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
+</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1px; bottom: 2px; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><style type="text/css">.MJXp-script {font-size: .8em}
+.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXp-bold {font-weight: bold}
+.MJXp-italic {font-style: italic}
+.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-largeop {font-size: 150%}
+.MJXp-largeop.MJXp-int {vertical-align: -.2em}
+.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXp-display {display: block; text-align: center; margin: 1em 0}
+.MJXp-math span {display: inline-block}
+.MJXp-box {display: block!important; text-align: center}
+.MJXp-box:after {content: " "}
+.MJXp-rule {display: block!important; margin-top: .1em}
+.MJXp-char {display: block!important}
+.MJXp-mo {margin: 0 .15em}
+.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXp-denom {display: inline-table!important; width: 100%}
+.MJXp-denom > * {display: table-row!important}
+.MJXp-surd {vertical-align: top}
+.MJXp-surd > * {display: block!important}
+.MJXp-script-box > *  {display: table!important; height: 50%}
+.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXp-script-box > *:last-child > * {vertical-align: bottom}
+.MJXp-script-box > * > * > * {display: block!important}
+.MJXp-mphantom {visibility: hidden}
+.MJXp-munderover {display: inline-table!important}
+.MJXp-over {display: inline-block!important; text-align: center}
+.MJXp-over > * {display: block!important}
+.MJXp-munderover > * {display: table-row!important}
+.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXp-mtr {display: table-row!important}
+.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-mlabeledtr {display: table-row!important}
+.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+.MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style></head>
+
+<body class="wy-body-for-nav" role="document"><div id="MathJax_Message" style="display: none;"></div>
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="http://julien.dehos.free.fr/build/html/index.html" class="icon icon-home"> Julien Dehos' webpage
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input name="q" placeholder="Search docs" type="text">
+    <input name="check_keywords" value="yes" type="hidden">
+    <input name="area" value="default" type="hidden">
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="http://julien.dehos.free.fr/build/html/CPP/index.html"><span class="toctree-expand"></span>Langage C++</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="http://julien.dehos.free.fr/build/html/CPP/Presentation.html">Présentation du module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="http://julien.dehos.free.fr/build/html/CPP/CM_base.html">CM : Notions de base</a></li>
+<li class="toctree-l2"><a class="reference internal" href="http://julien.dehos.free.fr/build/html/CPP/CM_environnement.html">CM : Environnement de développement</a></li>
+<li class="toctree-l2"><a class="reference internal" href="http://julien.dehos.free.fr/build/html/CPP/CM_poo.html">CM : Programmation orientée objet</a></li>
+<li class="toctree-l2"><a class="reference internal" href="http://julien.dehos.free.fr/build/html/CPP/CM_gtkmm.html">CM : Programmation avec gtkmm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="http://julien.dehos.free.fr/build/html/CPP/CM_fonction.html">CM : Fonction, etc…</a></li>
+<li class="toctree-l2"><a class="reference internal" href="http://julien.dehos.free.fr/build/html/CPP/CM_memoire.html">CM : Gestion mémoire</a></li>
+<li class="toctree-l2"><a class="reference internal" href="http://julien.dehos.free.fr/build/html/CPP/CM_template.html">CM : Templates</a></li>
+<li class="toctree-l2"><a class="reference internal" href="http://julien.dehos.free.fr/build/html/CPP/CM_stl.html">CM : Standard Template Library</a></li>
+<li class="toctree-l2"><a class="reference internal" href="http://julien.dehos.free.fr/build/html/CPP/TP1.html">TP1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="http://julien.dehos.free.fr/build/html/CPP/TP2.html">TP2</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#"><span class="toctree-expand"></span>TP3</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#mise-en-place-du-projet">Mise en place du projet</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#modelisation">Modélisation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#structure-location">Structure Location</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#classes-client-et-produit">Classes Client et Produit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#debut-d-implementation-de-la-classe-magasin">Début d’implementation de la classe Magasin</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#exceptions">Exceptions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#fin-d-implementation-de-la-classe-magasin">Fin d’implementation de la classe Magasin</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="http://julien.dehos.free.fr/build/html/CPP/TP4.html">TP4</a></li>
+<li class="toctree-l2"><a class="reference internal" href="http://julien.dehos.free.fr/build/html/CPP/TP5.html">TP5</a></li>
+<li class="toctree-l2"><a class="reference internal" href="http://julien.dehos.free.fr/build/html/CPP/TP6.html">TP6</a></li>
+<li class="toctree-l2"><a class="reference internal" href="http://julien.dehos.free.fr/build/html/CPP/TP7.html">TP7</a></li>
+<li class="toctree-l2"><a class="reference internal" href="http://julien.dehos.free.fr/build/html/CPP/TP8.html">TP8</a></li>
+<li class="toctree-l2"><a class="reference internal" href="http://julien.dehos.free.fr/build/html/CPP/TP9.html">TP9</a></li>
+<li class="toctree-l2"><a class="reference internal" href="http://julien.dehos.free.fr/build/html/CPP/TP10.html">TP10</a></li>
+<li class="toctree-l2"><a class="reference internal" href="http://julien.dehos.free.fr/build/html/CPP/Projet_taxi.html">Projet taxi (2016-2017)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="http://julien.dehos.free.fr/build/html/CPP/Projet_42vainc.html">Projet 42vainc (2015-2016)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="http://julien.dehos.free.fr/build/html/CPP/Projet_euler2d.html">Projet euler2d</a></li>
+<li class="toctree-l2"><a class="reference internal" href="http://julien.dehos.free.fr/build/html/CPP/Approfondissement.html">Approfondissement</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="http://julien.dehos.free.fr/build/html/GL/index.html">Génie Logiciel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="http://julien.dehos.free.fr/build/html/Projet_CPP_GL/index.html">Projet commun C++/GL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="http://julien.dehos.free.fr/build/html/PF/index.html">Programmation fonctionnelle</a></li>
+<li class="toctree-l1"><a class="reference internal" href="http://julien.dehos.free.fr/build/html/PFW/index.html">Prog. fonctionnelle pour le web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="http://julien.dehos.free.fr/build/html/HPC/index.html">Calcul haute performance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="http://julien.dehos.free.fr/build/html/textediting101/index.html">Text editing 101</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="http://julien.dehos.free.fr/build/html/index.html">Julien Dehos' webpage</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="http://julien.dehos.free.fr/build/html/index.html">Docs</a> »</li>
+      
+          <li><a href="http://julien.dehos.free.fr/build/html/CPP/index.html">Langage C++</a> »</li>
+      
+    <li>TP3</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+        
+      </li>
+  </ul>
+  <hr>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="tp3">
+<h1>TP3<a class="headerlink" href="#tp3" title="Permalink to this headline">¶</a></h1>
+<p><strong>Notions</strong> : classe, objet, exception</p>
+<p><strong>Application</strong> : gestion de location de produits</p>
+<div class="section" id="mise-en-place-du-projet">
+<h2>Mise en place du projet<a class="headerlink" href="#mise-en-place-du-projet" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Copiez le projet de base : <code class="docutils literal notranslate"><span class="pre">cp</span> <span class="pre">-r</span> <span class="pre">TP_vide</span> <span class="pre">TP3</span></code>.</li>
+</ul>
+</div>
+<div class="section" id="modelisation">
+<h2>Modélisation<a class="headerlink" href="#modelisation" title="Permalink to this headline">¶</a></h2>
+<p>Un <code class="docutils literal notranslate"><span class="pre">Magasin</span></code> possède des <code class="docutils literal notranslate"><span class="pre">Client</span></code> et des <code class="docutils literal notranslate"><span class="pre">Produit</span></code> ainsi
+qu’un ensemble de <code class="docutils literal notranslate"><span class="pre">Location</span></code>.  Un client peut louer plusieurs produits
+mais un produit ne peut être loué que par un seul client. Une <code class="docutils literal notranslate"><span class="pre">Location</span></code>
+associe un produit à un client grâce à leur identifiant (nombre entier). En
+plus de créer et de contenir les données, le <code class="docutils literal notranslate"><span class="pre">Magasin</span></code> attribue des
+identifiants uniques pour les clients et pour les produits
+(auto-incrémentations à partir de 0). On propose la modélisation suivante :</p>
+<div class="figure align-center">
+<img alt="../_images/TP3a.svg" src="TP3%20%E2%80%94%20Julien%20Dehos%27%20webpage%20documentation_fichiers/TP3a.svg"></div>
+</div>
+<div class="section" id="structure-location">
+<h2>Structure Location<a class="headerlink" href="#structure-location" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Écrivez un module implémentant la structure <code class="docutils literal notranslate"><span class="pre">Location</span></code>.  La méthode
+d’affichage doit produire le résultat suivant pour le client 0 et le produit
+2 :</li>
+</ul>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">Location</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li>Comment pouvez-vous instancier et en même temps initialiser un objet de cette
+structure ?  Si ce n’est pas déjà fait, testez-le dans le <code class="docutils literal notranslate"><span class="pre">main</span></code> ainsi que
+la méthode d’affichage.</li>
+</ul>
+</div>
+<div class="section" id="classes-client-et-produit">
+<h2>Classes Client et Produit<a class="headerlink" href="#classes-client-et-produit" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Écrivez un module implémentant la classe <code class="docutils literal notranslate"><span class="pre">Client</span></code>.  La méthode d’affichage
+doit produire le résultat suivant pour le client d’identifiant 42 et de nom
+“toto” :</li>
+</ul>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">Client</span> <span class="p">(</span><span class="mi">42</span><span class="p">,</span> <span class="n">toto</span><span class="p">)</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li>Testez l’affichage d’un client dans le <code class="docutils literal notranslate"><span class="pre">main</span></code>.</li>
+<li>Testez le constructeur et les accesseurs avec des tests unitaires.</li>
+<li>Mêmes questions pour la classe <code class="docutils literal notranslate"><span class="pre">Produit</span></code>.</li>
+</ul>
+</div>
+<div class="section" id="debut-d-implementation-de-la-classe-magasin">
+<h2>Début d’implementation de la classe Magasin<a class="headerlink" href="#debut-d-implementation-de-la-classe-magasin" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Écrivez un début de classe <code class="docutils literal notranslate"><span class="pre">Magasin</span></code> : pour l’instant, implémentez uniquement
+les attributs et le constructeur (qui doit initialiser les identifiants
+courants à 0).</li>
+<li>Implémentez la méthode <code class="docutils literal notranslate"><span class="pre">nbClients</span></code> (utilisez la méthode <code class="docutils literal notranslate"><span class="pre">size</span></code> de la classe
+<code class="docutils literal notranslate"><span class="pre">vector</span></code>).</li>
+<li>Implémentez la méthode <code class="docutils literal notranslate"><span class="pre">ajouterClient</span></code> (utilisez la méthode <code class="docutils literal notranslate"><span class="pre">push_back</span></code>
+de la classe <code class="docutils literal notranslate"><span class="pre">vector</span></code> et n’oubliez pas d’incrémenter l’identifiant courant
+des clients).</li>
+<li>Implémentez la méthode <code class="docutils literal notranslate"><span class="pre">afficherClients</span></code> (qui doit simplement afficher tous
+les clients du magasin).</li>
+<li>Implémentez la méthode <code class="docutils literal notranslate"><span class="pre">supprimerClient</span></code> (utilisez la fonction <code class="docutils literal notranslate"><span class="pre">swap</span></code> de
+la bibliothèque standard et la méthode <code class="docutils literal notranslate"><span class="pre">pop_back</span></code> de la classe <code class="docutils literal notranslate"><span class="pre">vector</span></code>).
+Pour bien faire, il faudrait également supprimer les <code class="docutils literal notranslate"><span class="pre">Location</span></code> qui
+mentionnent le client supprimé mais on ne le fera pas dans ce TP.</li>
+<li>Testez l’affichage dans le <code class="docutils literal notranslate"><span class="pre">main</span></code> et les autres méthodes avec des tests
+unitaires.</li>
+<li>Mêmes questions pour gérer les produits :</li>
+</ul>
+<div class="figure align-center">
+<img alt="../_images/TP3b.svg" src="TP3%20%E2%80%94%20Julien%20Dehos%27%20webpage%20documentation_fichiers/TP3b.svg"></div>
+</div>
+<div class="section" id="exceptions">
+<h2>Exceptions<a class="headerlink" href="#exceptions" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Lorsque l’on supprime un <code class="docutils literal notranslate"><span class="pre">Client</span></code> du <code class="docutils literal notranslate"><span class="pre">Magasin</span></code>, il faut que le <code class="docutils literal notranslate"><span class="pre">Client</span></code>
+existe bien. Modifiez votre code de façon à lever une exception si ce n’est
+pas le cas. Utilisez une exception de type <code class="docutils literal notranslate"><span class="pre">string</span></code> et de valeur “erreur :
+ce client n’existe pas”.</li>
+<li>Écrivez des tests unitaires pour vérifier que les exceptions sont
+correctement levées.</li>
+<li>Mêmes questions pour la suppression de produits.</li>
+</ul>
+</div>
+<div class="section" id="fin-d-implementation-de-la-classe-magasin">
+<h2>Fin d’implementation de la classe Magasin<a class="headerlink" href="#fin-d-implementation-de-la-classe-magasin" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Implémentez les méthodes ci-dessous en testant les affichages dans le <code class="docutils literal notranslate"><span class="pre">main</span></code>
+et le reste avec des tests unitaires. Pour l’ajout / suppression de
+<code class="docutils literal notranslate"><span class="pre">Location</span></code>, on se contentera de lever une exception si la <code class="docutils literal notranslate"><span class="pre">Location</span></code>
+existe déjà / n’existe pas.</li>
+</ul>
+<div class="figure align-center">
+<img alt="../_images/TP3c.svg" src="TP3%20%E2%80%94%20Julien%20Dehos%27%20webpage%20documentation_fichiers/TP3c.svg"></div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="http://julien.dehos.free.fr/build/html/CPP/TP4.html" class="btn btn-neutral float-right" title="TP4" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="http://julien.dehos.free.fr/build/html/CPP/TP2.html" class="btn btn-neutral" title="TP2" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr>
+
+  <div role="contentinfo">
+    <p>
+      Last updated on Apr 19, 2018.
+
+    </p>
+  </div> 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="TP3%20%E2%80%94%20Julien%20Dehos%27%20webpage%20documentation_fichiers/jquery.js"></script>
+      <script type="text/javascript" src="TP3%20%E2%80%94%20Julien%20Dehos%27%20webpage%20documentation_fichiers/underscore.js"></script>
+      <script type="text/javascript" src="TP3%20%E2%80%94%20Julien%20Dehos%27%20webpage%20documentation_fichiers/doctools.js"></script>
+      <script type="text/javascript" src="TP3%20%E2%80%94%20Julien%20Dehos%27%20webpage%20documentation_fichiers/MathJax.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="TP3%20%E2%80%94%20Julien%20Dehos%27%20webpage%20documentation_fichiers/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+
+</body></html>
