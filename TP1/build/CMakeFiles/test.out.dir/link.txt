@@ -1,1 +1,0 @@
-/usr/bin/c++   -std=c++17 -Wall -Wextra -g  -rdynamic CMakeFiles/test.out.dir/src/main_test.cpp.o CMakeFiles/test.out.dir/src/test_Fibonacci.cpp.o CMakeFiles/test.out.dir/src/Fibonacci.cpp.o  -o test.out -lstdc++ -lCppUTest -lCppUTestExt 
